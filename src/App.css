@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700;800&display=swap');
+
+::selection{
+  background-color: #5b59d7;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: #b1bef1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background:  rgb(85, 132, 233);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(58, 108, 236);
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  font-weight: 800;
+}
+
+/* body{
+  background: url("./assets/background.jpg");
+  background-image:linear-gradient(45deg, #dfe85d 30%, rgb(120, 230, 56) 80%);
+  background-image:linear-gradient(45deg, #4d90ed 30%, rgb(236, 159, 118) 80%);
+  background-image:linear-gradient(45deg, #9b63e5 30%, rgb(118, 236, 216) 80%);
+  font-size: 50px;
+  height: 100vh;
+} */
+
+/* -------------Home Page------------- */
+
+.parentHome {
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+  margin-top: 10%;
+  gap: 30px;
+  max-width: 50vw;
+  min-height: 50vh;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  background-color: rgba(255, 255, 255, 0.634);
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px rgba(152, 158, 105, 0.774);
+}
+
+.totalTrips {
+  font-size: 80px;
+  color: rgb(0, 162, 140)
+}
+
+.sortedTripsDiv {
+  display: grid;
+  grid-template-columns: 14vw 14vw 14vw;
+  white-space: nowrap;
+  padding: 10px 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.sortedTrips {
+  margin: 10px;
+}
+
+.sortedNum {
+  font-size: 65px;
+  color: rgb(237, 29, 84);
+}
+
+
+/* -------------Add Page------------- */
+
+.parentAdd {
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+  margin-top: 75px;
+  align-items:center;
+  justify-content: center;
+  gap: 20px;
+  min-width: fit-content;
+  max-width: 50vw;
+  min-height: 45vh;
+  margin-inline: auto;
+  background-color: rgba(255, 255, 255, 0.634);
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px rgba(69, 99, 127, 0.774);
+}
+
+.header {
+  padding: 10px;
+  font-size: 60px;
+  color: rgb(233, 94, 29);
+}
+
+.form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 350px;
+  padding: 20px;
+  gap: 30px;
+  font-size: 20px;
+}
+
+.form>div {
+  display: flex;
+  flex-flow: column;
+  min-width: 350px;
+  gap: 7px;
+}
+
+.addInput, select{
+  min-width: 350px;
+  font-size: 28px;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.740);
+}
+
+select{
+  min-width: 377px;
+  color: rgb(130, 130, 130);
+}
+
+.otherOptions{
+  color: rgb(60, 60, 60);
+}
+
+.buttonAndMessage {
+  display: flex;
+  flex-flow: row !important;
+  justify-content:space-between;
+  align-items: center;
+}
+
+button{
+  border: none;
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  background-size: auto 200%;
+  background-image: linear-gradient(#2f5cf0cb 50%, #e3eef5d7  50%);
+  background-repeat: repeat;
+  background-position: 50% 80%;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 3px 3px 4px #333;
+  transition: 300ms;
+}
+
+button:hover {
+  background-position: 50% 65%;
+}
+
+button:active {
+background-position: 50% 0%;
+transform: scale(0.95);
+color: white;
+}
+
+/* -------------List Page------------- */
+
+.parentTrips{
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+  margin-top: 50px;
+  align-items:center;
+  justify-content: center;
+  gap: 20px;
+  min-width: fit-content;
+  max-width: 60vw;
+  min-height: 40vh;
+  margin-inline: auto;
+  background-color: rgba(255, 255, 255, 0.634);
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px rgba(70, 61, 127, 0.774);
+}
+
+.tripsHeader{
+  padding: 10px;
+  font-size: 60px;
+  color: rgb(114, 29, 233);
+  text-align: center;
+}
+
+.tripsListHeader, .dataRow {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  padding: 10px;
+  text-align: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.tripList{
+ height: 40vh;
+ padding: 10px;
+ overflow-y: scroll;
+}
+
+.radioButtons {
+  display: flex;
+  flex-flow: row;
+  gap: 25px;
+  padding:10px;
+  font-size: 20px;
+}
+
+.radioButtons>div>input{
+  transform: scale(1.7);
+}
+
+
+/* -------------Links------------- */
+
+
+.links {
+  padding: 10px;
+  position: absolute;
+  left: 15px;
+  top: 20%;
+}
+
+a{
+  display: flex;
+  margin-block: 30px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+a:hover{
+  background-color: #ffffff88;
+}
+
+/* -------------Animation------------- */
+
+.tripDetails {
+  animation: popin ease-out 400ms;
+}
+
+@keyframes popin {
+  0% {
+    transform: scale(0);
+  }
+
+  60% {
+    transform: scale(1.2);
+  }
+
+  80% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* -------------SVG Filter------------- */
+
+.filterImg{
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(128deg) brightness(105%) contrast(101%);
+}
