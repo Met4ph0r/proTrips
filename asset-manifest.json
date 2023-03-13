@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/proTrips/static/css/main.1149cae9.css",
+    "main.js": "/proTrips/static/js/main.2a3f3bf0.js",
+    "static/media/trekking.png": "/proTrips/static/media/trekking.b282cc69f872aef0ceb5.png",
+    "static/media/map-location.svg": "/proTrips/static/media/map-location.dd80af62740a182cf98ff44222383c52.svg",
+    "static/media/house-solid.svg": "/proTrips/static/media/house-solid.e6e2be13dec7a7a5f4cec6b84273193a.svg",
+    "static/media/clock-rotate.svg": "/proTrips/static/media/clock-rotate.4c0a2a74b88462bec5ee199650729d60.svg",
+    "index.html": "/proTrips/index.html",
+    "main.1149cae9.css.map": "/proTrips/static/css/main.1149cae9.css.map",
+    "main.2a3f3bf0.js.map": "/proTrips/static/js/main.2a3f3bf0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1149cae9.css",
+    "static/js/main.2a3f3bf0.js"
+  ]
+}
